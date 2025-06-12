@@ -1,105 +1,89 @@
 const Games = () => {
   const games = [
     {
-      title: "Shadow Nexus",
-      genre: "RPG / Action",
+      title: "PRAXIS",
+      genre: "Стратегия / RPG",
       description:
-        "Погрузитесь в мрачный кибер-мир будущего, где технологии и магия сплетаются в эпической битве за выживание.",
+        "Погрузитесь в альтернативную историю СССР, где технологический прогресс определяет судьбу великой державы. Стройте, исследуйте, принимайте решения.",
       image:
-        "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&h=300&fit=crop",
-      status: "Доступна сейчас",
-    },
-    {
-      title: "Crimson Empire",
-      genre: "Strategy",
-      description:
-        "Стратегическая игра о построении империи в мире, где каждое решение может изменить ход истории.",
-      image:
-        "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&h=300&fit=crop",
       status: "В разработке",
-    },
-    {
-      title: "Void Hunters",
-      genre: "Shooter",
-      description:
-        "Космический шутер от первого лица с захватывающими битвами и исследованием неизведанных галактик.",
-      image:
-        "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=500&h=300&fit=crop",
-      status: "Скоро",
-    },
-    {
-      title: "Mystic Realms",
-      genre: "Adventure",
-      description:
-        "Приключенческая игра в фэнтезийном мире с магией, драконами и древними тайнами.",
-      image:
-        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop",
-      status: "Концепт",
+      features: [
+        "Альтернативная история СССР",
+        "Технологическое древо развития",
+        "Стратегические решения",
+        "Проработанный игровой мир",
+      ],
     },
   ];
 
   return (
     <section className="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-black mb-6 neon-text">НАШИ ИГРЫ</h2>
-          <div className="w-24 h-1 gaming-gradient mx-auto rounded-full"></div>
+          <h2 className="text-5xl font-black mb-6 text-white">НАШ ПРОЕКТ</h2>
+          <div className="w-24 h-1 bg-red-600 mx-auto rounded-full"></div>
           <p className="text-gray-400 text-xl mt-6 max-w-2xl mx-auto">
-            Откройте для себя захватывающие миры, созданные нашей командой
+            Знакомьтесь с нашей первой игрой, над которой мы работаем
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="max-w-4xl mx-auto">
           {games.map((game, index) => (
             <div
               key={index}
-              className="gaming-card rounded-xl overflow-hidden hover:gaming-glow transition-all duration-500 hover:scale-105 group"
+              className="bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700 hover:border-red-600/50 transition-all duration-300"
             >
-              <div className="relative overflow-hidden">
-                <img
-                  src={game.image}
-                  alt={game.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute top-4 right-4">
-                  <span className="gaming-gradient px-3 py-1 rounded-full text-xs font-semibold text-white">
-                    {game.status}
-                  </span>
+              <div className="md:flex">
+                <div className="md:w-1/2">
+                  <img
+                    src={game.image}
+                    alt={game.title}
+                    className="w-full h-64 md:h-full object-cover"
+                  />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-              </div>
 
-              <div className="p-6">
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-red-400 transition-colors">
-                    {game.title}
-                  </h3>
-                  <span className="text-red-400 text-sm font-semibold">
+                <div className="md:w-1/2 p-8">
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="text-3xl font-bold text-white">
+                      {game.title}
+                    </h3>
+                    <span className="bg-red-600 px-3 py-1 rounded-full text-xs font-semibold text-white">
+                      {game.status}
+                    </span>
+                  </div>
+
+                  <div className="text-red-400 font-semibold mb-4">
                     {game.genre}
-                  </span>
-                </div>
+                  </div>
 
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  {game.description}
-                </p>
+                  <p className="text-gray-300 leading-relaxed mb-6">
+                    {game.description}
+                  </p>
 
-                <div className="flex gap-3">
-                  <button className="flex-1 gaming-gradient py-2 px-4 rounded-lg text-white font-semibold text-sm hover:scale-105 transition-all duration-300">
-                    Подробнее
-                  </button>
-                  <button className="border border-red-600 py-2 px-4 rounded-lg text-red-400 font-semibold text-sm hover:bg-red-600 hover:text-white transition-all duration-300">
-                    Трейлер
-                  </button>
+                  <div className="mb-6">
+                    <h4 className="text-white font-semibold mb-3">
+                      Особенности:
+                    </h4>
+                    <ul className="space-y-2">
+                      {game.features.map((feature, i) => (
+                        <li key={i} className="text-gray-400 flex items-center">
+                          <span className="text-red-400 mr-2">•</span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <button className="bg-red-600 hover:bg-red-700 py-2 px-6 text-white font-medium transition-colors duration-300">
+                      Узнать больше
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <button className="border-2 border-red-600 px-8 py-3 rounded-lg text-red-400 font-semibold hover:bg-red-600 hover:text-white transition-all duration-300">
-            Все Проекты
-          </button>
         </div>
       </div>
     </section>

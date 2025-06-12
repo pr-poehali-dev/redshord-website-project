@@ -7,70 +7,81 @@ const About = () => {
           <div className="w-24 h-1 gaming-gradient mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
-            <h3 className="text-3xl font-bold text-red-400 mb-4">
-              Наша Миссия
+            <h3 className="text-3xl font-bold text-white mb-6">
+              О нашей студии
             </h3>
             <p className="text-gray-300 text-lg leading-relaxed">
-              REDSHORD — это команда страстных разработчиков, создающих игровые
-              миры, которые захватывают воображение и оставляют неизгладимые
-              впечатления. Мы верим, что каждая игра должна рассказывать историю
-              и дарить эмоции.
+              REDSHORD — это команда из двух студентов первого курса, увлеченных
+              разработкой игр. Мы только начинаем свой путь в геймдеве, но уже
+              работаем над нашим первым серьезным проектом.
+            </p>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Нашей целью является создание качественных игр с глубоким сюжетом
+              и проработанным игровым миром. Мы учимся на каждом этапе
+              разработки.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-              <div className="gaming-card p-6 rounded-lg hover:gaming-glow transition-all duration-300">
-                <h4 className="text-xl font-semibold text-red-400 mb-2">
-                  🎮 Инновации
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                <h4 className="text-lg font-semibold text-red-400 mb-2">
+                  🎓 Обучение
                 </h4>
-                <p className="text-gray-400">
-                  Передовые технологии в каждой игре
+                <p className="text-gray-400 text-sm">
+                  Постоянно изучаем новые технологии
                 </p>
               </div>
 
-              <div className="gaming-card p-6 rounded-lg hover:gaming-glow transition-all duration-300">
-                <h4 className="text-xl font-semibold text-red-400 mb-2">
-                  🚀 Качество
+              <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                <h4 className="text-lg font-semibold text-red-400 mb-2">
+                  🎮 Страсть
                 </h4>
-                <p className="text-gray-400">Безупречная проработка деталей</p>
+                <p className="text-gray-400 text-sm">
+                  Любим игры и хотим их создавать
+                </p>
               </div>
 
-              <div className="gaming-card p-6 rounded-lg hover:gaming-glow transition-all duration-300">
-                <h4 className="text-xl font-semibold text-red-400 mb-2">
-                  🌟 Креативность
+              <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                <h4 className="text-lg font-semibold text-red-400 mb-2">
+                  🚀 Амбиции
                 </h4>
-                <p className="text-gray-400">Уникальные идеи и концепции</p>
+                <p className="text-gray-400 text-sm">
+                  Стремимся к качеству в каждой детали
+                </p>
               </div>
 
-              <div className="gaming-card p-6 rounded-lg hover:gaming-glow transition-all duration-300">
-                <h4 className="text-xl font-semibold text-red-400 mb-2">
-                  🎯 Геймеры
+              <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                <h4 className="text-lg font-semibold text-red-400 mb-2">
+                  🌟 Рост
                 </h4>
-                <p className="text-gray-400">Создаем для истинных ценителей</p>
+                <p className="text-gray-400 text-sm">
+                  Развиваемся как команда каждый день
+                </p>
               </div>
             </div>
           </div>
 
           <div className="relative">
-            <div className="gaming-card p-8 rounded-xl relative overflow-hidden">
-              <div className="absolute inset-0 gaming-gradient opacity-10"></div>
-              <div className="relative z-10">
-                <div className="text-6xl font-black text-red-500 mb-4">10+</div>
-                <div className="text-xl text-gray-300 mb-6">Лет опыта</div>
+            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700">
+              <div className="text-center">
+                <div className="text-4xl font-black text-red-500 mb-2">1</div>
+                <div className="text-lg text-gray-300 mb-6">
+                  Год существования
+                </div>
 
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400">Выпущенных игр</span>
-                    <span className="text-2xl font-bold text-red-400">25+</span>
+                    <span className="text-gray-400">Участников команды</span>
+                    <span className="text-2xl font-bold text-red-400">2</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400">Активных игроков</span>
-                    <span className="text-2xl font-bold text-red-400">2M+</span>
+                    <span className="text-gray-400">Курс обучения</span>
+                    <span className="text-2xl font-bold text-red-400">1-й</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400">Наград получено</span>
-                    <span className="text-2xl font-bold text-red-400">15+</span>
+                    <span className="text-gray-400">Проектов в разработке</span>
+                    <span className="text-2xl font-bold text-red-400">1</span>
                   </div>
                 </div>
               </div>

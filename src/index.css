@@ -69,20 +69,19 @@
 
 @layer components {
   .gaming-gradient {
-    background: linear-gradient(135deg, #dc2626 0%, #ff4444 100%);
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   }
 
   .gaming-card {
-    background: rgba(42, 42, 46, 0.8);
-    border: 1px solid rgba(220, 38, 38, 0.2);
-    backdrop-filter: blur(10px);
+    background: rgba(31, 41, 55, 0.5);
+    border: 1px solid rgba(75, 85, 99, 0.5);
   }
 
   .gaming-glow {
-    box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.2);
   }
 
   .neon-text {
-    text-shadow: 0 0 10px rgba(220, 38, 38, 0.8);
+    text-shadow: none;
   }
 }
